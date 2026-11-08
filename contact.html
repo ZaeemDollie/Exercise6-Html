@@ -3,28 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main>
-      <section class="contact-section" aria-labelledby="contact-title">
-        <h1 id="contact-title">Get in touch</h1>
-        <p class="contact-intro">Have a question? Send us a message.</p>
-
+      <section class="contact-section">
+        <h1>Contact</h1>
         <form class="contact-form" method="post">
           <div class="form-row">
-            <div class="form-field">
+            <div>
               <label for="name">Name</label>
-              <input
-                id="name"
-                name="name"
-                type="text"
-                autocomplete="name"
-                required
-              />
+              <input id="name" name="name" autocomplete="name" required />
             </div>
-            <div class="form-field">
+            <div>
               <label for="email">Email</label>
               <input
                 id="email"
@@ -35,41 +27,38 @@
               />
             </div>
           </div>
-
           <div class="form-row">
-            <div class="form-field">
+            <div>
               <label for="phone">Phone</label>
               <input id="phone" name="phone" type="tel" autocomplete="tel" />
             </div>
-            <div class="form-field">
+            <div>
               <label for="subject">Subject</label>
               <select id="subject" name="subject" required>
-                <option value="" disabled selected>Select a subject</option>
-                <option value="general">General question</option>
-                <option value="support">Support</option>
-                <option value="other">Other</option>
+                <option value="" disabled selected>Select one</option>
+                <option>General question</option>
+                <option>Support</option>
+                <option>Other</option>
               </select>
             </div>
           </div>
-
-          <div class="form-field">
+          <div>
             <label for="message">Message</label>
             <textarea id="message" name="message" rows="3" required></textarea>
           </div>
-
-          <button type="submit">Send message</button>
+          <button type="submit">Send</button>
         </form>
       </section>
 
-      <section class="schedule-section" aria-labelledby="schedule-title">
-        <h2 id="schedule-title">Available appointment times</h2>
+      <section class="schedule-section">
+        <h2>Appointment times</h2>
         <div class="table-container">
           <table>
             <thead>
               <tr>
-                <th scope="col">Day</th>
-                <th scope="col">Time</th>
-                <th scope="col">Availability</th>
+                <th>Day</th>
+                <th>Time</th>
+                <th>Status</th>
               </tr>
             </thead>
             <tbody>
@@ -85,7 +74,7 @@
               </tr>
               <tr>
                 <td>Wednesday</td>
-                <td>11:00 am</td>
+                <td>11:00 AM</td>
                 <td>Available</td>
               </tr>
               <tr>
