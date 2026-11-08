@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 28px 16px;
+  background: #f4f6f8;
+  color: #1f2937;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-section {
+  padding: 24px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 8px 28px rgb(31 41 55 / 8%);
+}
+
+.schedule-section {
+  margin-top: 20px;
+  padding: 24px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 8px 28px rgb(31 41 55 / 8%);
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+h2 {
+  margin: 0 0 14px;
+  font-size: 1.25rem;
+}
+
+.contact-intro {
+  margin: 6px 0 18px;
+  color: #667085;
+}
+
+.contact-form,
+.form-row {
+  display: grid;
+}
+
+.contact-form {
+  gap: 16px;
+}
+
+.form-row {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: #fff;
+  color: inherit;
+  font: inherit;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus-visible {
+  border-color: #2196f3;
+  outline: 2px solid rgb(33 150 243 / 25%);
+  outline-offset: 2px;
+}
+
+button {
+  justify-self: start;
+  padding: 12px 24px;
+  border: 0;
+  border-radius: 4px;
+  background: #2196f3;
+  color: #fff;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1976d2;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  min-width: 480px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th,
+td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+th {
+  color: #475467;
+  font-size: 0.85rem;
+}
+
+tbody tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+tbody tr:hover {
+  background: #eef5fb;
+}
+
+@media (max-width: 520px) {
+  body {
+    padding: 20px 12px;
+  }
+
+  .contact-section,
+  .schedule-section {
+    padding: 20px 16px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  th,
+  td {
+    padding: 9px 5px;
+    font-size: 0.85rem;
+  }
+}
