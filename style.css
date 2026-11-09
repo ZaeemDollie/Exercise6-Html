@@ -5,7 +5,7 @@
 body {
   margin: 0;
   padding: 24px 16px;
-  background: #000000;
+  background: lightblue;
   font-family: Arial, sans-serif;
   color: #1f2937;
 }
@@ -17,7 +17,7 @@ main {
 
 .contact-section,
 .schedule-section {
-  background: #fff;
+  background: lightblue;
   padding: 24px;
   border-radius: 8px;
 }
@@ -26,11 +26,19 @@ main {
   margin-top: 20px;
 }
 
-h1,
-h2 {
+h1 {
   margin-top: 0;
+  position: relative;
+  justify-content: center;
+  left: 325px;
 }
 
+h2 {
+  margin-top: 0;
+  position: relative;
+  justify-content: center;
+  left: 290px;
+}
 .contact-form {
   display: grid;
   gap: 12px;
@@ -91,12 +99,13 @@ table {
   min-width: 480px;
   border-collapse: collapse;
   margin-top: 10px;
+  background: #fff;
 }
 
 th,
 td {
   padding: 10px;
-  border: 1px solid #ddd;
+  border: 1px solid black;
   text-align: left;
 }
 
